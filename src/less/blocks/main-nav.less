@@ -1,0 +1,79 @@
+.main-nav {
+	display:none;
+
+		@media (min-width: 1200px) {
+		display: inline-block;
+		min-width:500px;
+		margin: auto; 
+		}
+
+		&__list {
+		display:none;
+
+		@media (min-width: 1200px) {
+		display: inline-block;
+		min-width:500px;
+		margin: auto;
+		list-style: none;
+		white-space: nowrap;
+		padding:0px 0px;
+		margin: 0px 0px;
+		font-family: @font-family;
+  		font-size: @text-size-smaller;
+		}
+		}
+
+		&__item {
+		display: block;
+			a {
+					display:block;
+				
+        			padding:5px 0px;
+        			text-decoration: none;
+        			color:@gray-color-dark;
+        			text-transform:uppercase;
+        	}
+
+			@media (min-width: 1200px) {
+			display: inline-block;
+			margin-right:20px;
+
+				a {
+					display:block;
+					
+        			padding:5px 0px;
+        			text-decoration: none;
+        			color:@gray-color-dark;
+        			text-transform:uppercase;
+
+        			&:hover {
+        			color:blue;
+        			
+        				&::after {
+        				content: " ";
+        				position:absolute;
+            			width: 60px;
+            			height: 3px;
+            			color: #ff7435;
+            			bottom: 3px;
+            			}
+					}
+				}
+			}
+		}
+			
+	
+	&__burger {	
+		background: url('../img/burger_menu.png') no-repeat;
+  		display:block;
+  		width:29px;
+  		height:15px;
+        padding:5px 0px;
+        text-decoration: none;
+        color:@gray-color-dark;
+        text-transform:uppercase;
+    @media (min-width: 1200px) {
+		display: none;}
+	}
+}
+

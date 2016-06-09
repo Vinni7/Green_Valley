@@ -1,0 +1,193 @@
+.rest-tabs {
+
+		&__top {
+		}
+
+			&__top-item {			
+		
+			}
+
+				&__top-item-inner {
+				padding-top:20px;
+				background: url('../img/banner2_2.jpg') no-repeat center;
+				background-size: cover;
+				height: 320px;
+				
+
+
+				@media (min-width:768px) and (max-width: 1199px) {
+				background: url('../img/banner2_3.jpg') no-repeat center;
+				background-size: cover;
+				height: 320px;
+				}
+				@media (min-width: 1200px) {
+				background: url('../img/banner_health.jpg') no-repeat center;
+				height: 430px;
+				width:100%;
+				background-size: cover;
+				
+				}
+				}	
+
+					&__top-title {
+					font-family: @font-family-title;
+					font-size: @text-size;
+					background-color: @gray-color-white;
+					text-align:center;
+					display:block;
+					margin: 0 auto;
+					
+
+
+						@media (min-width:355px) {
+						font-size: @text-size-bigest;
+						margin:0 20px;
+						//min-width:590px;
+						text-align:left;
+						margin-bottom:20px;
+						}
+					}
+
+					&__top-description {
+					font-family: @font-family;
+					font-size: @text-size-small;
+					background-color: @gray-color-white;
+					text-align:center;
+					padding:10px 20px;
+					margin: 0 auto;
+					max-width:500px;
+					//max-width:320px;
+
+					@media (min-width:355px) {
+						font-size: @text-size;
+						margin:0 20px;
+						//max-width:590px;
+						text-align:left;
+						}
+					}
+
+		&__tabs-switcher {
+		margin: 0 auto;
+		list-style: none;
+		padding:0px 0px;
+		width:300px;
+		font-family: @font-family;
+  		font-size: @text-size-smaller;
+		
+			li {
+			display:inline-block;
+		
+				&:first-child {
+				margin-right:20px;
+				}
+
+				a {
+				display:block;
+        		padding:5px 0px;
+        		text-decoration: none;
+        		text-transform:uppercase;
+        		color:@gray-color-middle;
+				}
+			}
+		}
+
+		&__bottom{
+
+
+			&-item{
+
+				&-inner {
+				padding:20px;
+				background: url('../img/bg_family_rest.png') no-repeat center;
+			    //background-repeat: no-repeat;
+				//display:flex;
+				//flex-direction:column;
+				height: auto;
+				margin:auto auto;
+				width:100%;
+				
+				//@media (min-width: 1235px) {
+				//height: 430px;
+
+				//}
+					h2 {
+					font-family: @font-family-title;
+  					font-size: @text-size-big;
+  					margin-left: 60px;
+  					margin-right: 60px;
+  					text-align: center;
+  					}
+
+					p {
+					font-family: @font-family;
+  					font-size: @text-size-small;
+  					text-align: center;
+  					margin-left: 20px;
+  					margin-right: 20px;
+  					
+  					}
+
+					ul {
+					display:none;
+					@media (min-width:355px) {
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content:center;
+					align-content:center;
+					list-style:none;
+					font-family: @font-family;
+  					font-size: @text-size-smaller;
+  					font-weight:bold;
+  					text-transform:uppercase;
+
+  						li {
+  						max-width:85px;
+  						margin-right:60px;
+  	       				position:relative;
+  	       				text-align: center;
+  	       				margin-top:150px;
+            
+            				span {
+	           				width:85px;
+	           				height:85px;
+	           				border-radius:50%;
+	           				position:absolute;
+               				left:50%;
+                			margin-left: -42px;
+	           				bottom: 50px;
+	          				}
+            
+            					&:nth-child(1) span {
+            					  background: url('../img/icon_health1.png') no-repeat;  
+            					}
+            
+            					&:nth-child(2) span {
+            					  background: url('../img/icon_health2.png') no-repeat 20%;  
+            					}
+            
+            					&:nth-child(3) span {
+            					  background: url('../img/icon_health3.png') no-repeat;  
+            					}
+            
+            					&:nth-child(4) span {
+            					  background: url('../img/icon_health4.png') no-repeat;  
+            					}
+            
+            					&:nth-child(5) span {
+            					   background: url('../img/icon_health5.png') no-repeat; 
+            					}
+            
+            					&:last-child span { 
+            					     background: url('../img/icon_health6.png') no-repeat; 
+	        					   margin-right:0px;
+            					}
+      					}
+					}
+					
+				}
+
+			}
+		}
+
+}}
