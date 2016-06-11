@@ -1,0 +1,121 @@
+.review {
+	margin-top: 50px;
+	background-image: url('../img/reviews_bg3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 620px;
+	padding-top:50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+	@media (min-width:768px) and (max-width: 1199px) {
+		background: url('../img/reviews_bg4.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		min-height: 890px;
+		padding: 60px 130px; 
+				}
+				
+	@media (min-width: 1200px) {
+		background: url('../img/reviews_bg2.jpg') no-repeat center;
+		background-size: cover;
+		min-height: 530px;
+
+	}
+	
+	.owl {
+		display: flex;
+	flex-direction: column;
+	align-content:center;
+	
+
+	
+	@media (min-width: 1200px) {
+		flex-direction: row;
+		justify-content: space-around;
+		
+	}
+	}
+
+	h1 {
+		margin: 0px auto 60px;
+		padding:0 0;
+		display:block;
+		font-family: @font-family-title;
+		font-size: @text-size-biger;
+		color: @gray-color-white;
+		text-align:center;
+	}
+
+		&-item {
+		background-color: white;
+		margin-bottom:60px;
+		font-family: @font-family;
+		font-size: @text-size-small;
+		line-height: 1.375;
+		color: @gray-color-dark;
+		text-align:center;
+		padding: 70px 45px 30px;
+		display:flex;
+		flex-direction:column;
+		align-content:center;
+		min-width: 320px;
+		flex-basis:35%;
+
+			p {
+				order:2;
+			}
+
+			&__author {
+				position:relative;
+				margin-bottom: 40px;
+
+				img {
+					width:83px;
+					height: 83px;
+					position:absolute;
+					top:-100px;
+					left:50%;
+					margin-left: -42px;
+				}
+
+				.btn-vk, .btn-fb {
+					display:block;
+        			position:absolute;
+					width:30px;
+					height: 30px;
+					top:30px;
+					left:50%;
+					margin-left: -15px;
+
+				}
+			}
+
+			&__footer {
+				order:1;
+				position:relative;
+				font-size: @text-size-smaller;
+				font-weight: bold;
+			}
+			
+
+			&__data {
+				order:3;
+				font-size: @text-size-smaller;
+			}
+		}
+		&-item:nth-child(2) {
+			display:none;
+			@media (min-width: 768px) {
+		display:flex;
+		}
+		}
+
+}
+	
+
+

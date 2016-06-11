@@ -1,10 +1,8 @@
 .btn {
-  display:none;
-
-@media (min-width: 1200px) {
   display:inline-block;
   width:180px;
-  background-color: red;
+  background-color: @color-main;
+  border-radius:50px;
   
 
 
@@ -20,13 +18,30 @@
     }
 
     &__icon-calendar {
-      background-color: #ff7435;
-      color:white;
-      border-radius:50px;
+      background-image: url('../img/btn_icon.png');
+      background-repeat:  no-repeat;
+      background-position: 20px center;
       }
 
     &--white-border {
-      border-color:green;
+      background-color: transparent;
+      border: 3px solid white;
+      margin: 0 auto;
+      a {
+      padding: 10px 30px;
+    }
     }
   }
-}
+
+  &-vk {
+    background-image: url('../img/vk_icon.jpg');
+    background-repeat:  no-repeat;
+  }
+
+
+    &-fb {
+    background-image: url('../img/fb_icon.jpg');
+    background-repeat:  no-repeat;
+  }
+
+

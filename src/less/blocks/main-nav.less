@@ -1,14 +1,18 @@
 .main-nav {
 	display:none;
 
+	
+
 		@media (min-width: 1200px) {
 		display: inline-block;
 		min-width:500px;
 		margin: auto; 
+		
 		}
 
 		&__list {
-		display:none;
+		display:block;
+		margin:0 auto;
 
 		@media (min-width: 1200px) {
 		display: inline-block;
@@ -27,7 +31,6 @@
 		display: block;
 			a {
 					display:block;
-				
         			padding:5px 0px;
         			text-decoration: none;
         			color:@gray-color-dark;
@@ -40,26 +43,35 @@
 
 				a {
 					display:block;
-					
+					position:relative;
         			padding:5px 0px;
         			text-decoration: none;
         			color:@gray-color-dark;
         			text-transform:uppercase;
+        			
+
+        			&::after {
+        				content: ' ';
+        				display:block;
+        				position:absolute;
+            			width: 50%;
+            			margin-left: 15px;
+            			height: 30px;
+            			border-top:3px solid #a1a1a1;
+            			top:25px;
+            			}
 
         			&:hover {
-        			color:blue;
-        			
+        			color: @color-main;
         				&::after {
-        				content: " ";
-        				position:absolute;
-            			width: 60px;
-            			height: 3px;
-            			color: #ff7435;
-            			bottom: 3px;
-            			}
+        					border-top-color: @color-main;
+        				}
+        				
 					}
 				}
 			}
+
+
 		}
 			
 	
@@ -72,6 +84,7 @@
         text-decoration: none;
         color:@gray-color-dark;
         text-transform:uppercase;
+        order:1;
     @media (min-width: 1200px) {
 		display: none;}
 	}

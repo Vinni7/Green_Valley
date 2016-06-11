@@ -7,28 +7,33 @@
  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <script src="js/script.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+   
+  
  </head>
 
  <body>
- 
+
+
  <header class="page-header">
   <div class="page-header__inner">
    
-   <div class="logo"> <a href="index.html">
+   <div class="logo"> <a href="#">
      </a></div>
     
     
     <nav class="main-nav">
         <ul class="main-nav__list">
-            <li class="main-nav__item"> <a href="/Users/VM/html/epixx/GV/build/rooms.html" class="main-nav__link">Номера</a>
+            <li class="main-nav__item active"> <a href="/Users/VM/html/epixx/GV/build/rooms.html">Номера</a>
             </li>
-            <li class="main-nav__item"> <a href="" class="main-nav__link">Коттедж</a>
+            <li class="main-nav__item"> <a href=""">Коттедж</a>
             </li>
-            <li class="main-nav__item"> <a href="" class="main-nav__link">Ресторан</a>
+            <li class="main-nav__item"> <a href="">Ресторан</a>
             </li>
-            <li class="main-nav__item"> <a href="" class="main-nav__link">Отдых</a>
+            <li class="main-nav__item"> <a href="">Отдых</a>
             </li>
-            <li class="main-nav__item"> <a href="" class="main-nav__link">Контакты</a>
+            <li class="main-nav__item"> <a href="">Контакты</a>
             </li>
         </ul>
     </nav>
@@ -57,26 +62,22 @@
 
   <div class="rest-tabs">
 
-    <div class="rest-tabs__top">
-      <div class="rest-tabs__top-item">
-          <div class="rest-tabs__top-item-inner">
-            <div class="rest-tabs__top-title">Семейный отдых на берегу Финского залива</div>
-            <div class="rest-tabs__top-description">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей</div>
-            </div>
-         
-      </div>
-    </div>
- 
-  
-    <ul class="rest-tabs__tabs-switcher">
-        <li><a href="#">Семейный отдых</a></li>
-        <li><a href="#">Корпоративный</a></li>
+   <ul class="rest-tabs__tabs-switcher">
+        <li class="active"><a href="#rest-tabs__familly">Семейный отдых</a></li>
+        <li><a href="#rest-tabs__company">Корпоративный</a></li>
     </ul>
 
+    <div class="rest-tabs__item active" id="rest-tabs__familly">
+      
+      <div class="rest-tabs__item-top">
+        <div class="rest-tabs__item-top-inner">
+            <h2 class="rest-tabs__top-title">Семейный отдых на берегу Финского залива</h2>
+            <p class="rest-tabs__top-description">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей</p>
+        </div>
+      </div>
 
-    <div class="rest-tabs__bottom">
-      <div class="rest-tabs__bottom-item">
-        <div class="rest-tabs__bottom-item-inner">
+      <div class="rest-tabs__item-bottom">
+        <div class="rest-tabs__item-bottom-inner">
             <h2 class="rest-tabs__bottom-title">Здоровый отдых</h2>
             <p class="rest-tabs__bottom-description">Плавайте в бассейне, играйте в воллейбол, футбол и другие игры. Устройте семейный пикник с шашлыками и снимите напряжение в бане или спа. Почувствуйте отдых!</p>
             <ul class="rest-tabs__bottom-list">
@@ -88,57 +89,69 @@
                 <li> <span></span>Анимация</li>     
             </ul>
         </div>
-      </div>
+     </div>
+
+
     </div>
- </div>
+
+    <div class="rest-tabs__item" id="rest-tabs__company">
+    <p>Корпоративный отдых</p>
+    </div>
+
+</div>
+
+    
 
 <div class="gallery">
-<div class="gallery__main-image"><img src="../img/gal_1.jpg" alt=""></div>
-  
+<div class="gallery__main-image">
+
+</div>
+
+
   <div id="gallery" class="owl-carousel">
-    <div>active item1</div>
-    <div>item1</div>
-    <div>item1</div>
-    <div>item1</div>
-    <div>item1</div>
-    <div>item1</div>
-    <div>item1</div>
+    <div class="item"><img src="../img/gal_1.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_2.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_3.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_4.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_5.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_6.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_7.jpg" alt="1" width="110px"></div>
 </div>
 </div>
 
-<section class="reviews">
+<section class="review">
   <h1>Отзывы</h1>
-  <div class="owl-carousel">
+  <div class="owl">
       	
       	<div class="review-item">
       		<p>Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
       		<footer class="review-item__footer">
-        		<div class="review-item__author"><img src="">Екатерина В.
+        		<div class="review-item__author"><img src="img/ava_1.jpg">Екатерина В.
           			<div><a class="btn-vk"></a></div>
         		</div>
-        		<div class="review-item__data">Дата отдыха:01.06.2015 - 08.06.2015
+            </footer>
+        		<div class="review-item__data">Дата отдыха:<br>01.06.2015 - 08.06.2015
         		</div>
-      		</footer>
       	</div>
    		
    		<div class="review-item">
       		<p>Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
       		<footer class="review-item__footer">
-        		<div class="review-item__author"><img src="">Екатерина В.
-          			<div><a class="btn-vk" href="vk.com"></a></div>
+        		<div class="review-item__author"><img src="img/ava_2.jpg">Екатерина В.
+          			<div><a class="btn-fb" href="vk.com"></a></div>
         		</div>
-        		<div class="review-item__data">Дата отдыха: 15.05.2015 - 20.05.2015
+            </footer>
+        		<div class="review-item__data">Дата отдыха:<br> 15.05.2015 - 20.05.2015
         		</div>
-      		</footer>
       	</div>
   
   </div>
 	
-	<div class="btn btn--white-border"><a href="#"></a></div>
+	<div class="btn btn--white-border"><a href="#">Все отзывы</a></div>
 </section>
 
 <section class="offers">
-<h1 class="offers__title">Акциии и предложения</h1>
+<h2 class="offers__title">Акциии и предложения</h2>
 <div class="offers__item">
   <div class="offers__description">
     <div class="offers__description-title">Скидки в мае</div>Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!
@@ -229,10 +242,6 @@
 </footer>
 
  
- </div> 
-<script src="script.js"></script>
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-     
+ </div>  
  </body>
  </html>

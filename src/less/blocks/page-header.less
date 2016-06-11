@@ -1,6 +1,14 @@
 .page-header {
 	
 
+	.btn {
+		display:none;
+
+		@media (min-width: 1200px) {
+		display: inline-block;
+		}
+	}
+
 	.logo {
 		margin:0 auto;
 		
@@ -22,9 +30,19 @@
 		min-height:70px;
 		margin:0 auto;
 		padding:0px 20px;
-		
+
+		 .main-nav {
+		 	order:2;
+		 }
+
 			@media (min-width:768px) {
 			min-height:90px;
+			}
+
+			@media (min-width:1200px) {
+				.main-nav {
+		 		order:0;
+		 		}
 			}
 	}
 

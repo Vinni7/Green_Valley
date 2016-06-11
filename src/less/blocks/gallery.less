@@ -1,23 +1,25 @@
 .gallery {
-
+display:block;
 	&__main-image {
 	
-	//background: url('../img/gal_1.jpg'), no-repeat, center;
+				background: url('../img/gal_1.jpg') no-repeat center;
+				background-size: cover;
+				min-height: 260px;
+				margin:0 auto;
+				display: block;
 
-
-	@media (min-width:355px) {
-		//min-height: 320px;
-		//width:760px;
+	@media (min-width:768px) and (max-width: 1199px)  {
+				
+				min-height: 400px;
+				
 	}
-	@media (min-width: 1235px) {
-					width:1180px;
+	@media (min-width: 1200px) {
+					min-height:500px;
+					max-width: 1180px;
 
 				}
 
-				img {
-				max-width:100%;
-				height:auto;
-				}
-}
+				
 	
+}
 }
