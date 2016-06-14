@@ -1,0 +1,48 @@
+.choose-rest {
+	margin-top: 50px;
+	background-image: url('../img/choose_rest_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 890px;
+	padding-top:50px;
+	padding-bottom: 50px;
+	
+
+	@media (min-width:768px)  {
+		height: 500px;
+				}
+				
+	@media (min-width: 1200px) {
+	}
+
+	&__title {
+		margin: 0px auto 35px;
+		padding:0 0;
+		display:block;
+		font-family: @font-family-title;
+		font-size: @text-size-biger;
+		color: @gray-color-white;
+		text-align:center;
+		max-width: 220px;
+
+		@media (min-width:768px)  {
+		max-width: 600px;
+				}
+
+	}
+
+	&__list {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	padding:0px 20px;
+
+	@media (min-width:768px)  {
+	flex-direction: row;
+	}
+	}
+
+}

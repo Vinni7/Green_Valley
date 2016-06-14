@@ -1,7 +1,22 @@
 .offers {
 
+	&-slider {
+	overflow: hidden;
+	z-index: 9;
+}
 
-		h2 {
+	ul {
+		margin:0px 0px;
+		padding: 0px 0px;
+		}
+
+	li {
+		margin:0px auto;
+		padding:0px 0px;
+		 list-style-type: none;
+		}
+
+		&__title {
 			margin:0px 0px;
 			font-family: @font-family-title;
   			font-size: @text-size-big;
@@ -11,4 +26,82 @@
   			margin-top:35px;
   			margin-bottom:35px;
   			}
+
+  		&__slider-item {
+  		min-height: 300px;
+		margin:0 auto;
+		display: block;
+		position: relative;
+
+			@media (min-width: 1200px) {
+				min-height:335px;
+				max-width: 1180px;
+				}
+  			}
+
+  			.slide1 {
+  			background: url('../img/offers.jpg') no-repeat center;
+  			background-size: cover;			
+  			}
+
+  			.slide2 {
+  				background: url('../img/offers_bg2.jpg') no-repeat top;
+  				background-size: cover;			
+  			}
+
+  			&__slider-description {
+  				width: 300px;
+  				height: 120px;
+  				background-color: rgba(255,255,255,0.95);
+				position: absolute;
+				padding: 20px;
+				bottom: 25px;
+				font-family: @font-family;
+  				font-size: @text-size-small;
+  				line-height: 1.25em;
+  				padding-bottom: 20px;
+
+				@media (min-width: 1200px) {
+				width: 350px;
+				}
+
+				&-title {
+					margin-top:20px;
+					margin-bottom: 10px;
+					font-family: @font-family;
+					font-weight: bold;
+  					font-size: @text-size;
+					color: @color-main;
+					text-transform:uppercase;
+				}
+  			}
+
+  		&__slider-nav {
+ 		margin:20px auto;
+ 		display: block;
+ text-align: center;
+
+			
+			span {
+				 opacity: 0.9;
+				 background: #fff;
+				 width: 10px;
+				 height: 10px;
+				 border-radius: 50%;
+				 border: 3px solid @color-main;
+				 overflow: hidden;
+				 display: inline-block;
+				 margin-right:20px;
+				 margin-left:0px;
+
+				 :last-child {
+				 	margin-right:0px;
+				 }
+ 	
+ 				&.on {
+ 				background: @color-main;
+ 				}
+			}
+		}
 }
+

@@ -1,0 +1,121 @@
+.room-card {
+
+
+	.room-item {
+	background-color:white;
+	border: none;
+	margin-bottom:0px;
+	padding-bottom:0px;
+
+	&__image {
+		@media (min-width:1200px) {
+	float:right;
+	margin:40px 20px 0px 20px;
+
+	}
+	}
+
+	&__title{
+		margin-top: 50px;
+	margin-bottom: 15px;
+	}
+
+	}
+
+&__description {
+	margin-right:20px;
+	margin-left:20px;
+
+}
+
+&__text-title {
+		font-family: @font-family-title;
+		font-size: @text-size-big;
+		margin: 0 0;
+		padding: 0 0;
+		margin-top:40px;
+		margin-bottom:25px;
+}
+
+&__text {
+font-family: @font-family;
+		font-size: @text-size-small;
+		margin: 0 0;
+		padding: 0 0;
+		margin-top:40px;
+		margin-bottom:25px;
+}
+
+&__text-list {
+list-style:none;
+margin: 0 0;
+padding: 0 0;
+
+	@media (min-width:768px) {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:20px;
+	}
+
+
+li {
+	padding-left:10px;
+	position: relative;
+
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		border-top:1px solid @color-main;
+		border-right:1px solid @color-main;
+		transform:rotate(45deg);
+		top:7px;
+		left:-3px;
+	}
+
+}
+
+}
+
+&__booking-offer {
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	
+	.btn {
+		margin-bottom:15px;
+	}
+}
+&__room-list {
+	background-color:#fafafa;
+	padding:50px 20px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	@media (min-width:768px) {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+	.room-item {
+	background-color:white;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	margin-bottom:20px;
+	padding-bottom: 50px;
+	max-width:280px;
+	position: relative;
+
+	@media (min-width:768px) {
+	width:350px;
+	margin-bottom:0px;
+	}
+
+	&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+		display:none;
+	}
+	}
+}
+}

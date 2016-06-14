@@ -1,129 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+ <meta charset="utf-8">
+ <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <script src="js/script.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+   
+  
+ </head>
 
- <header class="page-header">
-  <div class="page-header__inner">
-      <a href="/Users/VM/html/epixx/GV/build/index" class="logo"> <img src="" alt="Лого"></a>
-      <nav class="main-nav">
-          <ul class="main-nav__list">
-               <li class="main-nav__item"> <a href="/Users/VM/html/epixx/GV/build/rooms.html" class="main-nav__link">Номера</a></li>
-               <li class="main-nav__item"> <a href="" class="main-nav__link">Коттедж</a></li>
-               <li class="main-nav__item"> <a href="" class="main-nav__link">Ресторан</a></li>
-               <li class="main-nav__item"> <a href="" class="main-nav__link">Отдых</a></li>
-               <li class="main-nav__item"> <a href="" class="main-nav__link">Контакты</a></li>
-          </ul>
-           <span class="main-nav_burger"></span>
-      </nav>
+ <body>
 
-      <div class="page-header__contacts">
-  <a href="tel:+7 812 777-55-88">+7 812 777-55-88"</a>
-      г. Санкт-Петербург, Приморское ш.600
-      </div>
+ @@include('page-header.html')
 
-      <a href="" class="btn btn__icon-calendar">Забронировать</a>
- 
- </div>
- </header>
-<main>
- <section class="banner-room-page">
-       <h1 class="banner-room-page__title">Номера в отеле Green</h1>
-       <p class="banner-room-page__description-part1">Комфорт и живописный вид на Финский залив и сосновый парк.</p>
-         <p class="banner-room-page__description-part2">4 этажа | 70 номеров</p>
+ <main>
+ <section class="room-page__banner">
+       <h1 class="room-page__banner-title">Номера в отеле Green Valley</h1>
+       <ul class="room-page__banner-description-list">
+       <li>Комфорт и живописный вид на Финский залив и сосновый парк.</li>
+         <li>4 этажа | 70 номеров</li>
+         </ul>
  </section>
+
+
 <h2 class="room-page__title">Категории</h2>
 
 <div class="room-page__room-list">
-	<section class="room-page__room-item">
- 			     <div class="room-item__image"></div>
-                 <div class="room-item__text-info">
- 			            <h3 class="proposal-item__title">Эконом</h3>
- 			            <div class="proposal-item__price-info">от <span class="proposal-item__price">3400 </span>руб./сутки
- 			             </div>
+	
+  <section class="room-item">
+  <div class="room-item__header">
+   <h3 class="room-item__title">Эконом</h3>
+                  <div class="room-item__price-info">от 
+                  <span class="room-item__price">3400</span>руб./сутки
+                   </div>
+  </div>
+
+ 			    <div class="room-item__image"><img src="../img/room_type2.jpg" alt=""></div>
+ 			           
  			            <p class="room-item__description">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек.
 Часть номеров с видом на Финский залив.</p>
  			            <div class="room-item__footer">
- 			                <a href="" class="btn">Забронировать</a>
- 			                <a href="" class="gray-link">Подробнее</a>
+ 			              <div class="btn"><a href="">Забронировать
+    </a></div>
+ 			                <a href="" class="links--gray">Подробнее</a>
  			            </div>
+            
+ </section>
 
-                  </div>
+    	<section class="room-item">
+        <div class="room-item__header">
+         <h3 class="room-item__title">Стандарт</h3>
+            <div class="room-item__price-info">от  
+                <span class="room-item__price">4000</span>руб./сутки
+            </div>
+        </div>  
+ 			     
+        <div class="room-item__image"><img src="../img/room_type1.jpg" alt=""></div>
+ 			  <p class="room-item__description">В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25 кв.м., состоит из гостевой и спальной зоны.</p>
+ 			  <div class="room-item__footer">
+ 			               <div class="btn"><a href="">Забронировать
+                     </a></div>
+ 			                <a href="" class="links--gray">Подробнее</a>
+ 			  </div>
+        
     </section>
 
-    	<section class="rom-page__room-item">
- 			     <div class="room-item__image"></div>
-                 <div class="room-item__text-info">
- 			            <h3 class="proposal-item__title">Стандарт</h3>
- 			            <div class="proposal-item__price-info">от  
- 			                 <span class="proposal-item__price">4000</span>руб./сутки
- 			             </div>
- 			            <p class="room-item__description">В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25 кв.м., состоит из гостевой и спальной зоны.</p>
- 			            <div class="room-item__footer">
- 			                <a href="" class="btn">Забронировать</a>
- 			                <a href="" class="gray-link">Подробнее</a>
- 			            </div>
+    	<section class="room-item">
+      <div class="room-item__header">
+            <h3 class="room-item__title">Стандарт+</h3>
+            <div class="room-item__price-info">от 
+                  <span class="room-item__price">4500</span> руб./сутки
+            </div>
+      </div> 
+ 			
+      <div class="room-item__image"><img src="../img/room-type3.jpg" alt=""></div>
+ 			            
+      <p class="room-item__description">В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв.м.</p>
+ 			            
+      <div class="room-item__footer">
+ 			                <div class="btn"><a href="">Забронировать
+                      </a></div>
+ 			                <a href="" class="links--gray">Подробнее</a>
+ 			</div>
+      </section>
 
-                  </div>
-    </section>
+    	<section class="room-item">
+       <div class="room-item__header">
+                  <h3 class="room-item__title">Люкс</h3>
+                  <div class="room-item__price-info">от 
+                       <span class="room-item__price">5700</span> руб./сутки
+                   </div>
+         </div>
 
-    	<section class="room-page__room-item">
- 			     <div class="room-item__image"></div>
-                 <div class="room-item__text-info">
- 			            <h3 class="proposal-item__title">Стандарт+</h3>
- 			            <div class="proposal-item__price-info">от 
- 			                 <span class="proposal-item__price">4500</span> руб./сутки
- 			             </div>
- 			            <p class="room-item__description">В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв.м.</p>
- 			            <div class="room-item__footer">
- 			                <a href="" class="btn">Забронировать</a>
- 			                <a href="" class="gray-link">Подробнее</a>
- 			            </div>
-
-                  </div>
-    </section>
-
-    	<section class="room-page__room-item">
- 			     <div class="room-item__image"></div>
-                 <div class="room-item__text-info">
- 			            <h3 class="proposal-item__title">Люкс</h3>
- 			            <div class="proposal-item__price-info">от 
- 			                 <span class="proposal-item__price">5700</span> руб./сутки
- 			             </div>
- 			            <p class="room-item__description">В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле.</p>
- 			            <div class="room-item__footer">
- 			                <a href="" class="btn">Забронировать</a>
- 			                <a href="" class="gray-link">Подробнее</a>
- 			            </div>
-
-                  </div>
-    </section>
+ 			  <div class="room-item__image"><img src="../img/room_type4.jpg" alt=""></div>
+          
+ 			  <p class="room-item__description">В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле.</p>
+ 			            
+        <div class="room-item__footer">
+ 			      <div class="btn"><a href="">Забронировать
+            </a></div>
+ 			      <a href="" class="links--gray">Подробнее</a>
+ 			  </div>
+           
+        </section>
 </div>
 
 </main>
 
- <footer class="page-footer">
-         <div class="container clearfix"></div>
-         <div class="page-footer__left-block">
-             <div class="page-footer__adress-part1">г. Санкт-Петербург</div> 
-             <div class="page-footer__adress-part2">Приморское ш.600</div>
-         </div>
-         <div class="page-footer__central-block">
-              <div class="logo"><a href="/"> <img src="" alt="Лого"></a></div>
-              <div class="social-btn-list">
-                   <span class="social-button-item">
-                   <span class="btn-vk"></span>
-                   </span>
-               </div>
-         </div>
-<div class="page-footer__right-block">
-     <div class="page-footer__contact-info-phone">+7 812 777-55-88</div>
-     <div class="contact-info-email">info@greenvalley.ru</div>
-</div>
-</footer>
+
+@@include('footer.html')
 
 </body>
 </html>

@@ -15,49 +15,8 @@
 
  <body>
 
+ @@include('page-header.html')
 
- <header class="page-header">
-  <div class="page-header__inner">
-   
-   <div class="logo"> <a href="#">
-     </a></div>
-    
-    
-    <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__item active"> <a href="/Users/VM/html/epixx/GV/build/rooms.html">Номера</a>
-            </li>
-            <li class="main-nav__item"> <a href=""">Коттедж</a>
-            </li>
-            <li class="main-nav__item"> <a href="">Ресторан</a>
-            </li>
-            <li class="main-nav__item"> <a href="">Отдых</a>
-            </li>
-            <li class="main-nav__item"> <a href="">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-        <a href="#" class="main-nav__burger"> </a>
-
-    
-    
-
-    <div class="page-header__contacts">
-      <a href="tel:+7 812 777-55-88">+7 812 777-55-88</a>
-      г. Санкт-Петербург, Приморское ш.600
-    </div>
-
-    <div class="btn btn__icon-calendar"><a href="">Забронировать
-    </a></div>
-
-    
- 
-  </div>
- </header>
-
-
- 
- 
  <main>
 
   <div class="rest-tabs">
@@ -68,7 +27,7 @@
     </ul>
 
     <div class="rest-tabs__item active" id="rest-tabs__familly">
-      
+    
       <div class="rest-tabs__item-top">
         <div class="rest-tabs__item-top-inner">
             <h2 class="rest-tabs__top-title">Семейный отдых на берегу Финского залива</h2>
@@ -109,13 +68,13 @@
 
 
   <div id="gallery" class="owl-carousel">
-    <div class="item"><img src="../img/gal_1.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_2.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_3.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_4.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_5.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_6.jpg" alt="1" width="110px"></div>
-    <div class="item"><img src="../img/gal_7.jpg" alt="1" width="110px"></div>
+    <div class="item"><img src="../img/gal_1.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_2.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_3.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_4.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_5.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_6.jpg" alt="1" width="110px" height="115px"></div>
+    <div class="item"><img src="../img/gal_7.jpg" alt="1" width="110px" height="115px"></div>
 </div>
 </div>
 
@@ -152,12 +111,27 @@
 
 <section class="offers">
 <h2 class="offers__title">Акциии и предложения</h2>
-<div class="offers__item">
-  <div class="offers__description">
-    <div class="offers__description-title">Скидки в мае</div>Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!
-  </div>
+<div class="offers__slider">
+  <ul>
+    <li class="offers__slider-item slide1">
+      <div class="offers__slider-description">
+        <div class="offers__slider-description-title">Скидки в мае</div>
+       Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!
+      </div>
+    </li>
+    <li class="offers__slider-item slide2">
+      <div class="offers__slider-description">
+        <div class="offers__slider-description-title">Все включено!</div>
+      Отдых на берегу финского залива всей семьей с трехразовым питанием
+      </div>
+    </li>
+  </ul>
+  <nav class="offers__slider-nav">
+  <span></span>
+  <span></span>
+  </nav>
 </div>
-<div class="offers__tabs"></div>
+
 </section>
 
 <section class="location">
@@ -167,7 +141,7 @@
    
    <div class="location__transport-item">
       
-         
+         <div class="location__transport-image-bus"></div>
          <div class="location__transport-title">Автобусы
          </div>
          <ul class="location__transport-way-list">
@@ -175,13 +149,13 @@
               <li class="location__transport-way-description"><span class="location__transport-way-description--bold">№ 211</span> от станции метро «Черная речка» до остановки «Санаторий Репино»</li>
 <li class="location__transport-way-description"><span class="location__transport-way-description--bold">№ 305К</span> от станции метро «Старая деревня»</li>
 <li class="location__transport-way-description"><span class="location__transport-way-description--bold">№ 680К</span> от станции метро «Проспект Просвещения»</li>
-<li class="location__transport-way-description"><span class="location__transport-way-description--bold">№ 400К</span>от станции метро «Площадь Ленина»
+<li class="location__transport-way-description"><span class="location__transport-way-description--bold">№ 400К</span> от станции метро «Площадь Ленина»
               </li>
               </ul>
    </div>
     <div class="location__transport-item">
       
-         
+         <div class="location__transport-image-train"></div>
          <div class="location__transport-title">Электропоезд
          </div>
               <p class="location__transport-way-description">Электропоезд Выборгского направления
@@ -195,21 +169,21 @@
   <h1 class="choose-rest__title">Где вы хотите отдохнуть?</h1>
     <div class="choose-rest__list">
       <div class="rest-type__place">
-            <img src="" class="rest-type__image">
-           <div class="choose-rest__description">
+            <div class="rest-type__image--hotel" > </div>
+           <div class="rest-type__description">
                <div class="rest-type__title">В отеле</div>
                <div class="rest-type__text">от
-              <span class="rest-type__price">4000</span>руб./сутки
+              <span class="rest-type__price">4000</span> руб./сутки
                </div>
            </div>
       </div>
 
       <div class="rest-type__place">
-            <img src="" class="rest-type__image">
-           <div class="choose-rest__description">
+           <div class="rest-type__image--cottage" > </div>
+           <div class="rest-type__description">
             <div class="rest-type__title">В коттедже</div>
                <div class="rest-type__text">от
-              <span class="rest-type__price">6800</span>руб./сутки
+              <span class="rest-type__price">6800</span> руб./сутки
                </div>
            </div>
       </div>
@@ -221,27 +195,8 @@
  </section>
 </main>
 
- <footer class="page-footer">
-         <div class="container clearfix"></div>
-         <div class="page-footer__left-block">
-             <div class="page-footer__adress-part1">г. Санкт-Петербург</div> 
-             <div class="page-footer__adress-part2">Приморское ш.600</div>
-         </div>
-         <div class="page-footer__central-block">
-              <div class="logo"><a href="/"> <img src="" alt="Лого"></a></div>
-              <ul class="social-btn-list">
-                   <li class="social-btn-list__vk">
-                   <li class="social-btn-list__inst">
-                   <li class="social-btn-list__fb">
-               </ul>
-         </div>
-<div class="page-footer__right-block">
-     <div class="page-footer__contact-phone">+7 812 777-55-88</div>
-     <div class="contact-email">info@greenvalley.ru</div>
-</div>
-</footer>
+@@include('footer.html')
 
  
- </div>  
  </body>
  </html>

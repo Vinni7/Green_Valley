@@ -1,0 +1,85 @@
+.rest-type {
+
+	&__place {
+	width:280px;
+	height: 340px;
+
+	@media (min-width:768px) and (max-width: 1199px)  {
+	width:350px;
+	height: 335px;
+	}
+	@media (min-width: 1200px) {
+	width:380px;
+	height: 335px;
+	}
+
+		&:first-child {
+		margin-bottom:20px; 
+	
+		@media (min-width:768px) {
+		margin-bottom:0px; 
+		}
+		}
+
+	}
+
+	&__image {
+
+		&--cottage, &--hotel {
+		margin: 0px 0px;
+		width: 280px;
+		height:200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@media (min-width:768px) and (max-width: 1199px)  {
+		width:350px;
+		height:200px;
+		}
+		@media (min-width: 1200px) {
+		width:380px;
+		height:200px;
+		}
+		
+		}
+
+		&--cottage {
+		background-image: url('../img/cottage_foto.jpg');
+		}
+
+		&--hotel {
+		background-image: url('../img/hotel_foto.jpg');
+		}
+	}
+
+	&__description {
+	margin: 0px 0px;
+	background-color:@gray-color-white; ;
+	height: 135px;
+	width: 100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	}
+		
+	&__title {
+	margin: 0px 0px;	
+	font-family: @font-family-title;
+  	font-size: @text-size-big;	
+  	text-align: center;
+	}
+
+	&__text  {
+	margin: 0px 0px;
+	font-family: @font-family;
+	font-weight: bold;
+  	font-size: @text-size;	
+  	text-align: center;
+	}
+
+	&__price {
+	color:@color-main;
+	}
+}
+
