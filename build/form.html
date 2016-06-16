@@ -13,7 +13,45 @@
  </head>
 
  <body>
-@@include('page-header.html')
+<header class="page-header">
+  <div class="page-header__inner">
+   
+   <div class="logo"> <a href="#">
+     </a></div>
+    
+    
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class="main-nav__item active"> <a href="/rooms.html">Номера</a>
+            </li>
+            <li class="main-nav__item"> <a href="">Коттедж</a>
+            </li>
+            <li class="main-nav__item"> <a href="">Ресторан</a>
+            </li>
+            <li class="main-nav__item"> <a href="">Отдых</a>
+            </li>
+            <li class="main-nav__item"> <a href="">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+        <a href="#" class="main-nav__burger"> </a>
+
+    
+    
+
+    <div class="page-header__contacts">
+      <a href="tel:+7 812 777-55-88">+7 812 777-55-88</a>
+      г. Санкт-Петербург, Приморское ш.600
+    </div>
+
+    <div class="btn btn__icon-calendar"><a href="/form.html">Забронировать
+    </a></div>
+
+    
+ 
+  </div>
+ </header>
+
 
 
 <main class="booking-form">
@@ -118,7 +156,24 @@
 
 	</form>
 </main>
-@@include('footer.html')
+<footer class="page-footer">
+         <div class="page-footer__left-block">
+             <div class="page-footer__adress-part1">г. Санкт-Петербург</div> 
+             <div class="page-footer__adress-part2">Приморское ш.600</div>
+         </div>
+         <div class="page-footer__central-block">
+              <div class="logo"><a href="/"> </a></div>
+              <ul class="social-btn-list">
+                   <li class="social-btn-list__vk"><a href="#"> </a></li>
+                   <li class="social-btn-list__inst"><a href="#"> </a></li>
+                   <li class="social-btn-list__fb"><a href="#"> </a></li>
+               </ul>
+         </div>
+<div class="page-footer__right-block">
+     <div class="page-footer__contact-phone">+7 812 777-55-88</div>
+     <div class="contact-email">info@greenvalley.ru</div>
+</div>
+</footer>
 	
 </body>
 </html>
