@@ -1,16 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
  <meta charset="utf-8">
- <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-  <script src="js/script.js"></script>
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-   
-  
+ 
+  <link href="/css/style.css" rel="stylesheet">
+
  </head>
 
  <body>
@@ -18,6 +12,13 @@
  @@include('page-header.html')
 
  <main>
+ <div class="owl-carousel">
+  <div class="item"><img src="../img/gal_1.jpg" alt=""></div>
+  <div class="item"><img src="../img/gal_2.jpg" alt=""></div>
+  <div class="item"><img src="../img/gal_3.jpg" alt=""></div>
+  <div class="item"><img src="../img/gal_4.jpg" alt=""></div>
+</div>
+
 
   <div class="rest-tabs">
 
@@ -112,7 +113,7 @@
 <section class="offers">
 <h2 class="offers__title">Акциии и предложения</h2>
 <div class="offers__slider">
-  <ul>
+  <ul class="owl-carousel">
     <li class="offers__slider-item slide1">
       <div class="offers__slider-description">
         <div class="offers__slider-description-title">Скидки в мае</div>
@@ -126,10 +127,7 @@
       </div>
     </li>
   </ul>
-  <nav class="offers__slider-nav">
-  <span></span>
-  <span></span>
-  </nav>
+  
 </div>
 
 </section>
@@ -197,6 +195,10 @@
 
 @@include('footer.html')
 
- 
+ <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+
+
  </body>
  </html>

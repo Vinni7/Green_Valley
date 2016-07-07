@@ -81,36 +81,25 @@
 </div>
 
 <div class="booking-form__container">
-	<div class="booking-form__step">шаг 2</div>
+<div class="booking-form__step">шаг 2</div>
 	<div class="booking-form__title">Место проживания</div>
-	<ul class="booking-form__list-places">
-		<li class="booking-form__places">
-		<input type="radio" id="hotel"><label for="hotel">Отель</label>
-		</li>
-			<li class="booking-form__places">
-		<input type="radio" id="cottage"><label for="cottage">Коттедж</label>
-		</li>
-	</ul>
+	<div class="booking-form__container-place">
+<input type="radio" name="place" value="hotel" id="hotel"><label for="hotel" class="booking-form__place-hotel">Отель</label>
+<input type="radio" name="place" value="cottage" id="cottage"><label for="cottage">Коттедж</label>
 </div>
+</div>
+
 
 <div class="booking-form__bgr-container">
 <div class="booking-form__step">шаг 3</div>
 	<div class="booking-form__title">Тип коттеджа</div>
-	<ul class="booking-form__list-typies-cottages">
-		<li class="booking-form__item">
-		<input type="radio" id="flagman"><label for="flagman">Флагман
+	<div class="booking-form__container-cottages">
+		<input type="radio" name="cottadges_kinds" value="flagman" id="flagman"><label for="flagman">Флагман
 		</label>
-		</li>
-			<li class="booking-form__item">
-		<input type="radio" id="ozerniy"><label for="ozerniy">Озерный</label>
-		</li>
-		<li class="booking-form__item">
-		<input type="radio" id="olhovka"><label for="olhovka">Ольховка</label>
-		</li>
-		<li class="booking-form__item">
-		<input type="radio" id="portoviy"><label for="portoviy">Портовый</label>
-		</li>
-	</ul>
+		<input type="radio" name="cottadges_kinds" value="ozerniy" id="ozerniy"><label for="ozerniy">Озерный</label>
+		<input type="radio" name="cottadges_kinds" value="olhovka" id="olhovka"><label for="olhovka">Ольховка</label>
+		<input type="radio" name="cottadges_kinds" value="portoviy" id="portoviy"><label for="portoviy">Портовый</label>
+	</div>
 <ul class="booking-form__list-item-description">
 	<li>Площадь 100кв./м</li>
 	<li>3 комнаты</li>
